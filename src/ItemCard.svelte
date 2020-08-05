@@ -1,4 +1,6 @@
 <script>
+    import Button from "./Button.svelte"
+
     export let name;
     export let maker;
     export let price;
@@ -12,6 +14,6 @@
         <div>${price} per {unit}</div>
     </div>
     <div>
-        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Order</button>
+        <Button text="Order" />
     </div>
 </div>
