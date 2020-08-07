@@ -16,6 +16,6 @@
         <div>${price} per {unit}</div>
     </div>
     <div class="flex flex-col items-end">
-        <Button text="Order" />
+        <Button />
     </div>
 </div>
