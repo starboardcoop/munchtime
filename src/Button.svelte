@@ -1,7 +1,15 @@
 <script>
+    import ItemStore from "./item-store";
+
+    export let itemName;
+
     let selected = false;
 
-    const toggleSelected = () => selected = !selected;
+    const toggleSelected = () => {
+        selected = !selected;
+        if (selected)
+            ItemStore.addItem(itemName);
+    }
 </script>
 
 <button class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-tl" class:selected={selected} on:click={toggleSelected}>
