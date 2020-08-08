@@ -1,14 +1,14 @@
 <script>
     import ItemStore from "./item-store";
 
-    export let itemName;
+    export let item;
 
     let selected = false;
 
     const toggleSelected = () => {
         selected = !selected;
         if (selected)
-            ItemStore.addItem(itemName);
+            ItemStore.addItem(item);
     }
 </script>
 

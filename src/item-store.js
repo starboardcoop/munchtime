@@ -4,7 +4,7 @@ class ItemStore {
     items = writable([]);
 
     addItem(item) {
-        console.log(`Adding ${item} to bag...`);
+        console.log(`Adding ${item.name} to bag...`);
         this.items.update(existing => existing + item);
     }
 }

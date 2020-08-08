@@ -18,13 +18,7 @@
 <main class="main">
 	<div class="m-auto max-w-sm">
 		{#each items as item}
-			<ItemCard 
-				name={item.name}
-				maker={item.from}
-				price={item.price}
-				unit={item.unit}
-				imageSource={item.imageSource}
-			/>
+			<ItemCard item={item} />
 		{/each}
 	</div>
 </main>
